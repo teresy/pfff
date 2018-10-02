@@ -28,8 +28,5 @@ let unparse_class ioc out =
   let out_chan = IO.output_channel out in
     JUnparse.unparse_class out_chan ioc
 
-module JPrint =
-struct
-  include JPrint
-end
+module JPrint = JPrint
 
